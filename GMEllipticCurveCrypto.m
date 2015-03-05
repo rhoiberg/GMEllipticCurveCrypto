@@ -77,6 +77,10 @@ typedef struct
     uint64_t m_high;
 } uint128_t;
 
+int ecc_make_key(uint8_t *p_publicKey, uint8_t *p_privateKey, int NUM_ECC_DIGITS, uint64_t *curve_p, uint64_t *curve_n, uint64_t *curve_GX, uint64_t *curve_GY);
+int ecdh_shared_secret(const uint8_t *p_publicKey, const uint8_t *p_privateKey, uint8_t *p_secret, int NUM_ECC_DIGITS, uint64_t *curve_p, uint64_t *curve_b);
+int ecdsa_sign(const uint8_t *p_privateKey, const uint8_t *p_hash, uint8_t *p_signature, int NUM_ECC_DIGITS, uint64_t *curve_p, uint64_t *curve_n, uint64_t *curve_GX, uint64_t *curve_GY);
+int ecdsa_verify(const uint8_t *p_publicKey, const uint8_t *p_hash, const uint8_t *p_signature, int NUM_ECC_DIGITS, uint64_t *curve_p, uint64_t *curve_b, uint64_t *curve_n, uint64_t *curve_GX, uint64_t *curve_GY);
 
 static int getRandomNumber(uint64_t *p_vli, int NUM_ECC_DIGITS)
 {
@@ -965,7 +969,7 @@ static void mod_sqrt(uint64_t *a, int NUM_ECC_DIGITS, uint64_t *curve_p)
     uint64_t l_result[NUM_ECC_DIGITS];
     p1[0] = 1;
     l_result[0] = 1;
-    for (int i = 1; i < NUM_ECC_DIGITS; i++) {
+    for (i = 1; i < NUM_ECC_DIGITS; i++) {
         p1[i] = l_result[i] = 0;
     }
 

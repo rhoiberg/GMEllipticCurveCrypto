@@ -29,13 +29,20 @@
 //  POSSIBILITY OF SUCH DAMAGE.
 //
 
+@import Foundation;
+
+NSData *derEncodeInteger(NSData *value);
+NSData *derEncodeSignature(NSData *signature);
+NSRange derDecodeSequence(const unsigned char *bytes, NSUInteger length, NSUInteger index);
+NSRange derDecodeInteger(const unsigned char *bytes, NSUInteger length, NSUInteger index);
+NSData *derDecodeSignature(NSData *der, NSUInteger keySize);
 
 #import "GMEllipticCurveCrypto+hash.h"
 
 #import <CommonCrypto/CommonDigest.h>
 
 NSData *derEncodeInteger(NSData *value) {
-    int length = [value length];
+    NSUInteger length = [value length];
     const unsigned char *data = [value bytes];
 
     int outputIndex = 0;
@@ -63,7 +70,7 @@ NSData *derEncodeInteger(NSData *value) {
 
 NSData *derEncodeSignature(NSData *signature) {
 
-    int length = [signature length];
+    NSUInteger length = [signature length];
     if (length % 2) { return nil; }
 
     NSData *rValue = derEncodeInteger([signature subdataWithRange:NSMakeRange(0, length / 2)]);
@@ -85,7 +92,7 @@ NSData *derEncodeSignature(NSData *signature) {
 }
 
 
-NSRange derDecodeSequence(const unsigned char *bytes, int length, int index) {
+NSRange derDecodeSequence(const unsigned char *bytes, NSUInteger length, NSUInteger index) {
     NSRange result;
     result.location = NSNotFound;
 
@@ -103,7 +110,7 @@ NSRange derDecodeSequence(const unsigned char *bytes, int length, int index) {
     return result;
 }
 
-NSRange derDecodeInteger(const unsigned char *bytes, int length, int index) {
+NSRange derDecodeInteger(const unsigned char *bytes, NSUInteger length, NSUInteger index) {
     NSRange result;
     result.location = NSNotFound;
 
@@ -129,7 +136,7 @@ NSRange derDecodeInteger(const unsigned char *bytes, int length, int index) {
     return result;
 }
 
-NSData *derDecodeSignature(NSData *der, int keySize) {
+NSData *derDecodeSignature(NSData *der, NSUInteger keySize) {
     NSInteger length = [der length];
     const unsigned char *data = [der bytes];
 
@@ -142,7 +149,7 @@ NSData *derDecodeSignature(NSData *der, int keySize) {
     if (rValue.location == NSNotFound || rValue.length > keySize) { return nil; }
 
     // Extract the s value (second item)
-    int sStart = rValue.location + rValue.length;
+    NSUInteger sStart = rValue.location + rValue.length;
     NSRange sValue = derDecodeInteger(data, length, sStart);
     if (sValue.location == NSNotFound || sValue.length > keySize) { return nil; }
 
