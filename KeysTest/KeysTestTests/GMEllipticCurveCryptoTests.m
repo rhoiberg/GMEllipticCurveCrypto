@@ -7,8 +7,8 @@
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
 
-#import "GMEllipticCurveCrypto.h"
 #import "GMEllipticCurveCrypto+hash.h"
+#import "GMEllipticCurveCrypto.h"
 
 @interface GMEllipticCurveCryptoTest : XCTestCase
 @end

@@ -1,0 +1,399 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A1D508D61AF2E94A007918F8 /* GMEllipticCurveCryptoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D508D51AF2E94A007918F8 /* GMEllipticCurveCryptoTests.m */; };
+		A1D508DB1AF2E959007918F8 /* GMEllipticCurveCrypto.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D508D81AF2E959007918F8 /* GMEllipticCurveCrypto.m */; };
+		A1D508DC1AF2E959007918F8 /* GMEllipticCurveCrypto+hash.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D508DA1AF2E959007918F8 /* GMEllipticCurveCrypto+hash.m */; };
+		A1DCDB721AF2E4F900761FE7 /* libKeysTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A1DCDB661AF2E4F900761FE7 /* libKeysTest.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A1DCDB731AF2E4F900761FE7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A1DCDB5E1AF2E4F900761FE7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A1DCDB651AF2E4F900761FE7;
+			remoteInfo = KeysTest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A1DCDB641AF2E4F900761FE7 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		A1D508D51AF2E94A007918F8 /* GMEllipticCurveCryptoTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GMEllipticCurveCryptoTests.m; path = KeysTestTests/GMEllipticCurveCryptoTests.m; sourceTree = SOURCE_ROOT; };
+		A1D508D71AF2E959007918F8 /* GMEllipticCurveCrypto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GMEllipticCurveCrypto.h; path = ../GMEllipticCurveCrypto.h; sourceTree = SOURCE_ROOT; };
+		A1D508D81AF2E959007918F8 /* GMEllipticCurveCrypto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GMEllipticCurveCrypto.m; path = ../GMEllipticCurveCrypto.m; sourceTree = SOURCE_ROOT; };
+		A1D508D91AF2E959007918F8 /* GMEllipticCurveCrypto+hash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "GMEllipticCurveCrypto+hash.h"; path = "../GMEllipticCurveCrypto+hash.h"; sourceTree = SOURCE_ROOT; };
+		A1D508DA1AF2E959007918F8 /* GMEllipticCurveCrypto+hash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "GMEllipticCurveCrypto+hash.m"; path = "../GMEllipticCurveCrypto+hash.m"; sourceTree = SOURCE_ROOT; };
+		A1DCDB661AF2E4F900761FE7 /* libKeysTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libKeysTest.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1DCDB711AF2E4F900761FE7 /* KeysTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KeysTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1DCDB771AF2E4F900761FE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A1DCDB631AF2E4F900761FE7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1DCDB6E1AF2E4F900761FE7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1DCDB721AF2E4F900761FE7 /* libKeysTest.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A1DCDB5D1AF2E4F900761FE7 = {
+			isa = PBXGroup;
+			children = (
+				A1DCDB681AF2E4F900761FE7 /* KeysTest */,
+				A1DCDB751AF2E4F900761FE7 /* KeysTestTests */,
+				A1DCDB671AF2E4F900761FE7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A1DCDB671AF2E4F900761FE7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A1DCDB661AF2E4F900761FE7 /* libKeysTest.a */,
+				A1DCDB711AF2E4F900761FE7 /* KeysTestTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A1DCDB681AF2E4F900761FE7 /* KeysTest */ = {
+			isa = PBXGroup;
+			children = (
+				A1D508D71AF2E959007918F8 /* GMEllipticCurveCrypto.h */,
+				A1D508D81AF2E959007918F8 /* GMEllipticCurveCrypto.m */,
+				A1D508D91AF2E959007918F8 /* GMEllipticCurveCrypto+hash.h */,
+				A1D508DA1AF2E959007918F8 /* GMEllipticCurveCrypto+hash.m */,
+			);
+			path = KeysTest;
+			sourceTree = "<group>";
+		};
+		A1DCDB751AF2E4F900761FE7 /* KeysTestTests */ = {
+			isa = PBXGroup;
+			children = (
+				A1D508D51AF2E94A007918F8 /* GMEllipticCurveCryptoTests.m */,
+				A1DCDB761AF2E4F900761FE7 /* Supporting Files */,
+			);
+			path = KeysTestTests;
+			sourceTree = "<group>";
+		};
+		A1DCDB761AF2E4F900761FE7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A1DCDB771AF2E4F900761FE7 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A1DCDB651AF2E4F900761FE7 /* KeysTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1DCDB7A1AF2E4F900761FE7 /* Build configuration list for PBXNativeTarget "KeysTest" */;
+			buildPhases = (
+				A1DCDB621AF2E4F900761FE7 /* Sources */,
+				A1DCDB631AF2E4F900761FE7 /* Frameworks */,
+				A1DCDB641AF2E4F900761FE7 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KeysTest;
+			productName = KeysTest;
+			productReference = A1DCDB661AF2E4F900761FE7 /* libKeysTest.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		A1DCDB701AF2E4F900761FE7 /* KeysTestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1DCDB7D1AF2E4F900761FE7 /* Build configuration list for PBXNativeTarget "KeysTestTests" */;
+			buildPhases = (
+				A1DCDB6D1AF2E4F900761FE7 /* Sources */,
+				A1DCDB6E1AF2E4F900761FE7 /* Frameworks */,
+				A1DCDB6F1AF2E4F900761FE7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A1DCDB741AF2E4F900761FE7 /* PBXTargetDependency */,
+			);
+			name = KeysTestTests;
+			productName = KeysTestTests;
+			productReference = A1DCDB711AF2E4F900761FE7 /* KeysTestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A1DCDB5E1AF2E4F900761FE7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Hoiberg Consulting";
+				TargetAttributes = {
+					A1DCDB651AF2E4F900761FE7 = {
+						CreatedOnToolsVersion = 6.3;
+					};
+					A1DCDB701AF2E4F900761FE7 = {
+						CreatedOnToolsVersion = 6.3;
+					};
+				};
+			};
+			buildConfigurationList = A1DCDB611AF2E4F900761FE7 /* Build configuration list for PBXProject "KeysTest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A1DCDB5D1AF2E4F900761FE7;
+			productRefGroup = A1DCDB671AF2E4F900761FE7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A1DCDB651AF2E4F900761FE7 /* KeysTest */,
+				A1DCDB701AF2E4F900761FE7 /* KeysTestTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A1DCDB6F1AF2E4F900761FE7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A1DCDB621AF2E4F900761FE7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1D508DC1AF2E959007918F8 /* GMEllipticCurveCrypto+hash.m in Sources */,
+				A1D508DB1AF2E959007918F8 /* GMEllipticCurveCrypto.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1DCDB6D1AF2E4F900761FE7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1D508D61AF2E94A007918F8 /* GMEllipticCurveCryptoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A1DCDB741AF2E4F900761FE7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A1DCDB651AF2E4F900761FE7 /* KeysTest */;
+			targetProxy = A1DCDB731AF2E4F900761FE7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		A1DCDB781AF2E4F900761FE7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A1DCDB791AF2E4F900761FE7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A1DCDB7B1AF2E4F900761FE7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		A1DCDB7C1AF2E4F900761FE7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		A1DCDB7E1AF2E4F900761FE7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = KeysTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					XCTest,
+					"-ObjC",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A1DCDB7F1AF2E4F900761FE7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = KeysTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					XCTest,
+					"-ObjC",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A1DCDB611AF2E4F900761FE7 /* Build configuration list for PBXProject "KeysTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1DCDB781AF2E4F900761FE7 /* Debug */,
+				A1DCDB791AF2E4F900761FE7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A1DCDB7A1AF2E4F900761FE7 /* Build configuration list for PBXNativeTarget "KeysTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1DCDB7B1AF2E4F900761FE7 /* Debug */,
+				A1DCDB7C1AF2E4F900761FE7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A1DCDB7D1AF2E4F900761FE7 /* Build configuration list for PBXNativeTarget "KeysTestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1DCDB7E1AF2E4F900761FE7 /* Debug */,
+				A1DCDB7F1AF2E4F900761FE7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A1DCDB5E1AF2E4F900761FE7 /* Project object */;
+}
