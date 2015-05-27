@@ -1020,6 +1020,9 @@ int ecc_make_key(uint8_t *p_publicKey, uint8_t *p_privateKey, int NUM_ECC_DIGITS
 {
     uint64_t l_private[NUM_ECC_DIGITS];
     uint64_t l_publicX[NUM_ECC_DIGITS], l_publicY[NUM_ECC_DIGITS];
+
+    vli_clear(l_publicY, NUM_ECC_DIGITS);
+
     //EccPoint l_public;
     unsigned l_tries = 0;
     
@@ -1117,6 +1120,8 @@ static void vli_modMult(uint64_t *p_result, uint64_t *p_left, uint64_t *p_right,
     uint64_t l_tmp[2 * NUM_ECC_DIGITS];
     uint64_t *v[2] = {l_tmp, l_product};
     
+    vli_clear(l_modMultiple, 2 * NUM_ECC_DIGITS);
+
     vli_mult(l_product, p_left, p_right, NUM_ECC_DIGITS);
     vli_set(l_modMultiple + NUM_ECC_DIGITS, p_mod, NUM_ECC_DIGITS);
     vli_clear(l_modMultiple, NUM_ECC_DIGITS);
@@ -1705,6 +1710,9 @@ static uint64_t Curve_n_384[6] = {0xECEC196ACCC52973, 0x581A0DB248B0A77A, 0xC763
 
             // Decompress to get the (x, y) point
             uint64_t l_publicX[_numDigits], l_publicY[_numDigits];
+            vli_clear(l_publicX, _numDigits);
+            vli_clear(l_publicY, _numDigits);
+
             ecc_point_decompress(l_publicX, l_publicY, [_publicKey bytes], _numDigits, _curve_p, _curve_b);
 
             // Compose the public key (0x04 + x + y)
